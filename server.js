@@ -19,7 +19,8 @@ const client = new MongoClient(uri, {
     strict: true,
     deprecationErrors: true,
   },
-  tls: true
+  tls: true,
+  tlsAllowInvalidCertificates: false 
 });
 
 const database = client.db('ecom');
